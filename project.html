@@ -1,128 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Afnitha's Project Details</title>
-  <link rel="stylesheet" href="style.css"/>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f6f8;
-      margin: 0;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 850px;
-      background: white;
-      padding: 2.5rem 3rem;
-      border-radius: 16px;
-      margin: auto;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    }
-    h1 {
-      text-align: center;
-      font-size: 26px;
-      margin-bottom: 2rem;
-    }
-    a {
-      text-decoration: none;
-      color: #5b21b6;
-      font-weight: bold;
-      display: block;
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    .project-detail {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      font-size: 20px;
-      margin-bottom: 0.5rem;
-      color: #111827;
-    }
-    .section-title {
-      font-weight: bold;
-      font-size: 17px;
-      margin: 1rem 0 0.3rem 0;
-      color: #222;
-    }
-    p, li {
-      font-size: 15px;
-      color: #333;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 20px;
-      margin: 0;
-    }
-    ul li {
-      margin: 0;
-      padding: 0;
-      list-style-type: disc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Afnitha P AbdulRahman</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Project Details</h1>
-    <a href="index.html">← Back to Home</a>
 
-    <div class="project-detail">
-      <h2>1: PUBG Game Winner Prediction</h2>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Afnitha</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
 
-      <p><strong>Project:</strong> Game Winner Prediction (PUBG Dataset)<br>
-      <strong>Type:</strong> Regression | <strong>Tools:</strong> Python, Pandas, CatBoost, Feature Engineering</p>
+    <section class="project-details">
+        <h1>Project Details</h1>
 
-      <p class="section-title">Problem Statement:</p>
-      <p>In competitive online gaming, predicting a player’s likelihood of winning can provide valuable feedback to both developers and gamers. Using a dataset of 4.4 million records from PUBG matches, I built a predictive model to estimate each player’s final winning percentage (<code>winPlacePerc</code>).</p>
+        <div class="project-block">
+            <h2>PUBG Game Winner Prediction</h2>
+            <p><strong>Type:</strong> Regression | <strong>Tools:</strong> Python, Pandas, CatBoost</p>
+            <h3>Problem Statement:</h3>
+            <p>Predict a player’s likelihood of winning based on game performance metrics.</p>
+            <h3>Approach:</h3>
+            <p>Processed large-scale data (4.4M rows), engineered features, and applied CatBoost Regressor for accuracy.</p>
+            <h3>Results:</h3>
+            <p><strong>R² = 0.93</strong>, RMSE = 0.08</p>
+        </div>
 
-      <p class="section-title">Approach:</p>
-      <ul>
-        <li>Preprocessed a massive dataset containing 4.4M+ rows.</li>
-        <li>Engineered new features like walk distance, kill count, headshots, survival rank, and match type grouping.</li>
-        <li>Applied CatBoost Regressor, known for handling categorical features well.</li>
-        <li>Tuned hyperparameters and removed data leaks and inconsistencies.</li>
-      </ul>
+        <div class="project-block">
+            <h2>Credit Score Classification</h2>
+            <p><strong>Type:</strong> Classification | <strong>Tools:</strong> Python, Gradient Boosting</p>
+            <h3>Problem Statement:</h3>
+            <p>Classify users as Good, Standard, or Poor credit risk to aid lending decisions.</p>
+            <h3>Approach:</h3>
+            <p>Handled class imbalance using SMOTE and trained Gradient Boosting Classifier.</p>
+            <h3>Results:</h3>
+            <p><strong>Gini = 1.0</strong></p>
+        </div>
 
-      <p class="section-title">Results:</p>
-      <p>Achieved an <strong>R² score of 0.93</strong> and <strong>RMSE = 0.08</strong>. Delivered a highly accurate model capable of ranking players effectively during or after a match.</p>
+        <div class="project-block">
+            <h2>Hospital Stay Duration Prediction</h2>
+            <p><strong>Type:</strong> Classification | <strong>Tools:</strong> Random Forest, XGBoost</p>
+            <h3>Problem Statement:</h3>
+            <p>Predict patient length of stay to optimize hospital bed allocation and management.</p>
+            <h3>Results:</h3>
+            <p><strong>Accuracy = 83%</strong></p>
+        </div>
 
-      <p class="section-title">Key Learnings:</p>
-      <ul>
-        <li>Tackled high-volume data under memory constraints.</li>
-        <li>Improved feature engineering for gaming datasets.</li>
-        <li>Gained experience in tuning tree-based models (CatBoost).</li>
-      </ul>
-    </div>
+        <div class="project-block">
+            <h2>Power BI Sales Dashboard</h2>
+            <p><strong>Type:</strong> Data Visualization | <strong>Tools:</strong> Power BI, DAX, Power Query</p>
+            <h3>Goal:</h3>
+            <p>Created an interactive dashboard to track KPIs, revenue, and regional performance metrics.</p>
+        </div>
+    </section>
 
-    <div class="project-detail">
-      <h2>2: Credit Score Prediction</h2>
+    <footer>
+        <p>© 2025 Afnitha P AbdulRahman | Data Science Portfolio</p>
+    </footer>
 
-      <p><strong>Project:</strong> Credit Score Classification<br>
-      <strong>Type:</strong> Classification | <strong>Tools:</strong> Gradient Boosting, SMOTE, Scikit-learn</p>
-
-      <p class="section-title">Problem Statement:</p>
-      <p>Financial institutions must assess customer creditworthiness before lending. I created a classification model to categorize users into "Poor", "Standard", or "Good" credit score classes using behavioral and financial features.</p>
-
-      <p class="section-title">Approach:</p>
-      <ul>
-        <li>Cleaned and preprocessed a real-world credit dataset.</li>
-        <li>Detected and handled class imbalance using SMOTE (Synthetic Minority Oversampling).</li>
-        <li>Selected relevant features like loan history, income level, credit inquiries, and payment delays.</li>
-        <li>Trained and tuned a Gradient Boosting Classifier.</li>
-      </ul>
-
-      <p class="section-title">Results:</p>
-      <p>Achieved a <strong>Gini Coefficient of 1.0</strong>, indicating near-perfect model performance.</p>
-
-      <p class="section-title">Key Learnings:</p>
-      <ul>
-        <li>Improved data balance using advanced oversampling.</li>
-        <li>Deepened understanding of credit modeling in real-world applications.</li>
-        <li>Enhanced skills in model evaluation and feature impact analysis.</li>
-      </ul>
-    </div>
-  </div>
 </body>
 </html>
