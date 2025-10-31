@@ -98,73 +98,108 @@
         </p>
       </article>
 
-           <!-- Project 3 -->
-      <article class="project-item">
-        <h2>Hospital Stay Duration Prediction</h2>
-        <p class="muted">Goal: Predict the duration of patient hospital stay to optimize resource allocation and improve care management.</p>
+          <!-- Project 3 -->
+<article class="project-item">
+  <h2>Hospital Stay Duration Prediction</h2>
+  <p class="muted">
+    Goal: Predict patient length of stay to help hospitals optimize bed management and resources.
+  </p>
 
-        <h3>Dataset</h3>
-        <p>Source: Healthcare dataset (HealthCareAnalytics.csv) with patient, admission, and hospital-level features. Target: Stay (length of stay category).</p>
+  <h3>Dataset</h3>
+  <p>
+    Size: 318,438 rows × 18 columns. Mixed numerical and categorical healthcare data from Rubixe AI Solutions internship.
+  </p>
 
-        <h3>Tools & Techniques</h3>
-        <p>Python, Pandas, Seaborn, Scikit-learn. EDA, preprocessing (encoding & scaling), feature selection, model comparison (Decision Tree, Random Forest, XGBoost).</p>
+  <h3>Tools & Techniques</h3>
+  <p>
+    Python, Pandas, Scikit-learn, Matplotlib, Seaborn. Preprocessing included label encoding for ordinal features, scaling,
+    and resampling to address class imbalance.
+  </p>
 
-        <h3>Implementation</h3>
-        <ul class="bullet-list">
-          <li>Handled categorical variables with one-hot and label encoding.</li>
-          <li>Applied feature scaling to numerical variables.</li>
-          <li>Trained and compared models for accuracy, F1-score, and interpretability.</li>
-        </ul>
+  <h3>Implementation</h3>
+  <ul class="bullet-list">
+    <li>Exploratory Data Analysis to understand length-of-stay patterns by severity, admission type, and ward.</li>
+    <li>Tried Logistic Regression, Decision Tree, KNN, and ensembles; tuned with GridSearchCV and RandomizedSearchCV.</li>
+  </ul>
 
-        <h3>Key Findings</h3>
-        <ul class="bullet-list">
-          <li>Severity of Illness and Admission Type are key drivers of hospital stay duration.</li>
-          <li>Random Forest achieved the best balanced accuracy.</li>
-        </ul>
+  <h3>Key Findings</h3>
+  <ul class="bullet-list">
+    <li>Emergency admissions and higher illness severity correlated with longer stays.</li>
+    <li>Department and ward type affect average stay duration significantly.</li>
+    <li>Ensemble model achieved ≈83% testing accuracy after tuning.</li>
+  </ul>
 
-        <h3>Challenges & Solutions</h3>
-        <ul class="bullet-list">
-          <li>Imbalanced stay classes: applied SMOTE to balance categories.</li>
-          <li>Feature selection improved model stability and reduced noise.</li>
-        </ul>
+  <h3>Challenges & Solutions</h3>
+  <ul class="bullet-list">
+    <li>Class imbalance: applied resampling prior to training.</li>
+    <li>Overfitting: tuned tree-based hyperparameters to improve generalization.</li>
+  </ul>
 
-        <p class="project-link">
-          Repository: <a href="https://github.com/Afnitha701/Hospital-Stay-Duration-Prediction">github.com/Afnitha701/Hospital-Stay-Duration-Prediction</a>
-        </p>
-      </article>
+  <p class="project-link">
+    Repository:
+    <a href="https://github.com/Afnitha701/Hospital_Stay_Duration_Prediction" target="_blank">
+      github.com/Afnitha701/Hospital_Stay_Duration_Prediction
+    </a>
+  </p>
+</article>
 
-      <!-- Project 4 -->
-      <article class="project-item">
-        <h2>Sales Dashboard — Power BI</h2>
-        <p class="muted">Goal: Create an interactive dashboard to analyze sales trends, revenue performance, and customer behavior.</p>
+<!-- Project 4 -->
+<article class="project-item">
+  <h2>Sales Performance Dashboard (Power BI)</h2>
+  <p class="muted">
+    Goal: Build an interactive dashboard to analyze revenue, customers, and product performance for business decision-making.
+  </p>
 
-        <h3>Tools & Techniques</h3>
-        <p>Power BI, DAX, Data Modeling, Data Cleaning in Power Query.</p>
+  <h3>Dataset</h3>
+  <p>
+    Synthetic practice dataset with Sales_Data, Customer_Data, Products_Data, Regions_Table.
+    Approximately 5,000 rows across tables.
+  </p>
 
-        <h3>Implementation</h3>
-        <ul class="bullet-list">
-          <li>Cleaned and modeled raw sales data.</li>
-          <li>Built KPIs: Total Revenue, Profit Margin, Customer Retention.</li>
-          <li>Created time-based and regional insights dashboards.</li>
-        </ul>
+  <h3>Tools & Techniques</h3>
+  <p>
+    Power BI Desktop, Power Query, DAX for calculated measures, interactive visuals and slicers for ad-hoc analysis.
+  </p>
 
-        <h3>Key Findings</h3>
-        <ul class="bullet-list">
-          <li>Seasonal peaks in Q4 and strong performance in the North region.</li>
-          <li>Data-driven recommendations increased quarterly forecasting accuracy.</li>
-        </ul>
-      </article>
-    </section>
-  </main>
+  <h3>Implementation</h3>
+  <ul class="bullet-list">
+    <li>Designed star-schema model and cleaned data in Power Query.</li>
+    <li>Implemented DAX measures for Profit, Revenue, and KPI tracking.</li>
+    <li>Built interactive visuals: bar charts, maps, KPI cards, and slicers for dynamic filtering.</li>
+  </ul>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <small>© 2025 Afnitha P AbdulRahman</small>
-    </div>
-  </footer>
+  <h3>Key Findings</h3>
+  <ul class="bullet-list">
+    <li>Top customers and regions concentrated most revenue; top products contributed majority of sales.</li>
+    <li>Distributor channel produced highest revenue share relative to export and wholesale.</li>
+    <li>Interactive slicers enabled fast ad-hoc answers for managers.</li>
+  </ul>
+
+  <h3>Challenges & Solutions</h3>
+  <ul class="bullet-list">
+    <li>Missing profit column: created Profit measure using DAX.</li>
+    <li>Formatting and layout: standardized visuals and alignment to improve consumption by business users.</li>
+  </ul>
+
+  <p class="project-link">
+    Repository:
+    <a href="https://github.com/Afnitha701/Power-BI-Sales-Performance-Dashboard" target="_blank">
+      github.com/Afnitha701/Power-BI-Sales-Performance-Dashboard
+    </a>
+  </p>
+</article>
+
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <small>© 2025 Afnitha P AbdulRahman</small>
+  </div>
+</footer>
 
 </body>
 </html>
+
 
 
